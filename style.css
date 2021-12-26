@@ -5,8 +5,11 @@
 }
 
 body{
-    font-family: sans-serif;
-    color: white;
+    font-family: Barlow;
+}
+
+.content .text, .section1 h1, .section2 h1, .pics h1, .clients .textbox, .client h3{
+    font-family: Fraunces;
 }
 
 .header{
@@ -24,14 +27,15 @@ body{
 }
 
 .navigation{
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .navigation div{
-    margin: 20px;
-    font-size: 10px;
+    margin: 20px 30px;
+    font-size: 12px;
 }
 
 .contact  h2{
@@ -39,10 +43,6 @@ body{
     background-color: white;
     border-radius: 17px;
     color: hsl(212, 27%, 19%);
-}
-
-.contact:hover{
-    cursor: pointer;
 }
 
 .content{
@@ -56,7 +56,207 @@ body{
 }
 
 .text{
+    color: white;
     transform: translateY(-200px);
+    letter-spacing: 10px;
     font-size: 22px;
     font-weight: bold;
+}
+
+.arrow{
+    transform: translateY(-50px)
+}
+
+.section1, .section2, .pics{
+    width: 100%;
+    display: flex;
+}
+
+.left, .right{
+    width: 50%;
+}
+
+.section1 .right img, .section2 .left img{
+    width: 100%;
+    height: 100%;
+}
+
+.section1 .left, .section2 .right{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+
+}
+
+.left-container, .right-container{
+    width: 75%;
+}
+
+.section2 .right-container h1{
+    width: 600px;
+}
+
+.section1 h1, .section2 h1{
+    font-size: 48px;
+    width: 400px;
+    margin-bottom: 80px;
+    margin-top: 200px;
+}
+
+.section1 p, .section2 p{
+    margin-top: 100px;
+    font-size: 18px;
+    width: 460px;
+}
+
+.left-container .button, .right-container .button{
+    margin-top: 50px;
+    height: 50px;
+    width: 200px;
+}
+
+.navigation div:hover, .button img:hover, .contact-links .navigation-bar h3:hover, .contact-links .logos img:hover{
+    cursor: pointer;
+}
+
+.pics .left{
+    color: hsl(167, 40%, 24%);
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.pics .right{
+    color: hsl(198, 62%, 26%);
+    background-image: url("./images/desktop/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.pics .left, .pics .right{
+    font-size: 12px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.text-box{
+    text-align: center;
+    width: 40%;
+    margin-bottom: 100px;
+    font-size:20px;
+    transform: translateY(50px)
+}
+
+.text-box h1{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.clients{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clients .textbox{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    letter-spacing: 3px;
+}
+
+.clients-container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client{
+    margin-right: 100px;
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client .profile-pic{
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.client p{
+    text-align: center;
+    width: 80%;
+}
+
+.client .name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    width: 400px;
+}
+
+.examples{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.examples .picture{
+    width: 25%;
+    height: 60vh;
+}
+
+.examples .picture img, .contact-links .logo img, .button img{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #90D4C5;
+}
+
+.contact-links .logo{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height: 30px;
+}
+
+.contact-links .navigation-bar{
+    color: #4F9485;
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 120px;
+}
+
+.contact-links .logos{
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.section1 p, .section2 p, .clients .textbox, .client .name p{
+    color: hsl(232, 10%, 55%);
+}
+
+.client p{
+    color: hsl(213, 9%, 39%);
+    font-weight: 600;
 }
